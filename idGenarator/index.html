@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            ID Card generator
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+      <div class="text-cont">
+        <header class="text-center1">
+                <h1>ID Card Generator</h1>
+        </header>
+        <div class="container">
+            <div class="section-container">
+                <div class="text-center">
+                  <h1> Enter Student Details</h1>
+                </div>
+                <form onsubmit="return false">
+                    <div class="form-element">
+                        <label class="form-label">
+                          <div class="inp-label">
+                            <strong>Enter Name:</strong>
+                          </div>
+                        </label>
+                        <div class="text">
+                          <i class = "fa fa-user"></i>
+                        <input type="text" id="name"/>
+                      </div>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">
+                          
+                          <div class="inp-label">
+
+                        <strong>Enter College Name:</strong>
+                      </div>
+                        </label>
+                        <div class="text">
+                          <i class = "fa fa-university"></i>
+                        <input type="text" id="collegeName" />
+                     </div>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">
+                          <div class="inp-label">
+                        <strong>Enter Location:</strong>
+                      </div>
+                        </label>
+                        <div class="text">
+                          <i class = "fas fa-map-marked-alt"></i>
+                        <input type="text" id="location" />
+                      </div>
+                    </div>
+                    <div class="form-element">
+                    
+                      
+                      <label class="form-label"> <div class="inp-label1"><strong>Enter student's picture:</strong></div></label>
+                      <div class="text1">
+                      <input type="file" id="file" accept="F:\cardImages\" onchange="loadImage(event)">
+                      </div>
+                    
+                  </div>
+                 
+                    <button onclick="generateCard()" class="btn-click">Generate Card</button>
+                  
+                </form>
+            </div> 
+
+           
+
+
+            <div class="section1-container">
+                <div class="id-card-container" id="collegeCard">
+                    <div class="text-center2">
+                        <strong>Generated ID Card</strong>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <div class="user-card">
+                              <div class="card-element college-name">
+                               <span></small>fileLocation:</span></small>
+                                <span id="fileLocation"></span>
+                            </div>
+                            </div>
+                            <div class="general-information">
+                            <div class="card-element card-name">
+                           <span>Name:</span></small>
+                                <span id="cardName"></span>
+                            </div>
+                            <div class="card-element college-name">
+                            <span>College Name:</span></small>
+                                <span id="cardCollegeName"></span>
+                            </div>
+                            <div class="card-element college-name">
+                           <span>Location:</span></small>
+                                <span id="cardLocation"></span>
+                            </div>
+                           
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+      </div>
+      <div class="vl"></div>
+        <script src="main.js"></script>
+    </body>
+</html>

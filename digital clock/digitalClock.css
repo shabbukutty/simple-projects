@@ -1,0 +1,42 @@
+body{
+    width :700px;
+    height :500px; 
+    
+    display : flex;
+    flex-direction : row;
+   
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    color : white;
+    font-size :60px;
+
+}
+.container{
+    width :700px;
+    height :500px; 
+    background-color: black ;
+    justify-content: space-evenly;
+}
+p{
+    height: 20px
+}
+    
+    
+#timeContainer{
+    height: 100px;
+    font-size:70px;
+
+}
+
+#dateContainer{
+    height: 100px;
+    font-size: 40px;
+   
+    color:white;
+    
+
+}
+.buttons{
+    
+}

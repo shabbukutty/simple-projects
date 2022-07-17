@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+    align-items:center;
+
+}
+.main-container {
+    width: 600px;
+    height : 350px;
+     background-color: wheat;
+   
+    margin: auto;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+#header {
+    font-size:27px;
+    color: white;
+}
+
+.quotes{
+    width: 400px;
+    height:175px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius:25px;
+    margin: auto;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-color: #d6eef8;
+
+}
+#generate-quote{
+    background-color : wheat;
+    font-size: 16px;
+    border: none ;
+    border-radius:10px;
+    padding: 10px;
+    color: white;
+}
